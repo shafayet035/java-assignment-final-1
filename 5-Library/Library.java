@@ -16,22 +16,22 @@ public class Library {
 
     for(int i = 0; i < this.books.length ; i++) {
       if(this.books[i] != null) {
-        System.out.println("Book Name: " + this.books[i].bookName);
-    		System.out.println("Book Author: " + this.books[i].bookAuthor);
-    		System.out.println("Book Id: " + this.books[i].bookId);
-    		System.out.println("Book Type: " + this.books[i].bookType);
-    		System.out.println("Book Copy: " + this.books[i].bookCopy);
+        System.out.println("Book Name: " + this.books[i].getBookName());
+    		System.out.println("Book Author: " + this.books[i].getBookAuthor());
+    		System.out.println("Book Id: " + this.books[i].getBookId());
+    		System.out.println("Book Type: " + this.books[i].getBookType());
+    		System.out.println("Book Copy: " + this.books[i].getBookCopy());
       }
     }
   }
 
   public void addNewBook(Book book) {
-    books[totalBook + 1] = book;
+    books[totalBook] = book;
     totalBook++;
   }
 
   public void addNewBookCopy(Book book, int copy) {
-    book.bookCopy = book.bookCopy + copy;
+    book.addBookCopy(copy);
   }
 
   public static void main(String args[]) {
