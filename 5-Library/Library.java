@@ -16,11 +16,7 @@ public class Library {
 
     for(int i = 0; i < this.books.length ; i++) {
       if(this.books[i] != null) {
-        System.out.println("Book Name: " + this.books[i].getBookName());
-    		System.out.println("Book Author: " + this.books[i].getBookAuthor());
-    		System.out.println("Book Id: " + this.books[i].getBookId());
-    		System.out.println("Book Type: " + this.books[i].getBookType());
-    		System.out.println("Book Copy: " + this.books[i].getBookCopy());
+        this.books[i].showInfo();
       }
     }
   }

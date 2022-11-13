@@ -15,24 +15,7 @@ public class Book {
 		this.bookId = bookId;
 		this.bookType = bookType;
 		this.bookCopy = bookCopy;
-
 		this.bookCounter++;
-	}
-
-	public String getBookName() {
-		return this.bookName;
-	}
-	public String getBookAuthor() {
-		return this.bookAuthor;
-	}
-	public String getBookId() {
-		return this.bookId;
-	}
-	public String getBookType() {
-		return this.bookType;
-	}
-	public int getBookCopy() {
-		return this.bookCopy;
 	}
 
 	public void showInfo() {
