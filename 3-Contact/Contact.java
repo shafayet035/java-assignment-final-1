@@ -17,7 +17,8 @@ public class Contact {
 
   public void showPersonInfo() {
     System.out.println("Name: " + this.personName);
-    System.out.println("Id: " + this.personId);
+    System.out.println("Id: " + this
+    .personId);
     System.out.println("Age: " + this.age);
     System.out.println("Mobile Number: " + this.mobileNumber);
     System.out.println("Gender: " + this.gender);

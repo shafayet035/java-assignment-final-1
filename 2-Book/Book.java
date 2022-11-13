@@ -1,8 +1,8 @@
 public class Book {
-	String bookName; 
-	String bookAuthor; 
+	String bookName;
+	String bookAuthor;
 	String bookId;
-	String bookType; 
+	String bookType;
 	int bookCopy;
 
 	static int bookCounter;
@@ -36,10 +36,10 @@ public class Book {
 	}
 
 	public static void main(String args[]) {
-		Book B1 = new Book("Physics", "Saiful sir", "123", "Kufa", 1);
-		Book B2 = new Book("Math", "Zerin", "1234", "Kufa", 1);
-		Book B3 = new Book("Math", "Zerin", "1234", "Kufa", 1);
-		
+		Book B1 = new Book("Physics", "Mr.X", "123", "Kufa", 1);
+		Book B2 = new Book("Math", "Mr.Y", "1234", "Kufa", 1);
+		Book B3 = new Book("Math", "Mr.Y", "1234", "Kufa", 1);
+
 		B1.addBookCopy(10);
 		B2.addBookCopy(5);
 
