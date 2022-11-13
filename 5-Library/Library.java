@@ -31,7 +31,7 @@ public class Library {
   }
 
   public void addNewBookCopy(Book book, int copy) {
-    book.bookCopy = book.bookCopy + 1;
+    book.bookCopy = book.bookCopy + copy;
   }
 
   public static void main(String args[]) {
@@ -41,6 +41,9 @@ public class Library {
 
     L.addNewBook(B1);
     L.addNewBook(B2);
+
+    L.addNewBookCopy(B1, 10);
+    L.addNewBookCopy(B2, 15);
 
     L.showLibInfo();
   }
