@@ -1,8 +1,8 @@
 public class Library {
-  String libName;
-  String libAddress;
-  Book [] books = new Book[1000];
-  int totalBook;
+  private String libName;
+  private String libAddress;
+  private Book [] books = new Book[1000];
+  private int totalBook;
 
   Library() {}
   Library(String libName, String libAddress) {
