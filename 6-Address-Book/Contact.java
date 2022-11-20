@@ -36,10 +36,4 @@ public class Contact {
       System.out.println("Mobile Operator is: Banglalink");
     }
   }
-
-  public static void main(String args[]) {
-		Contact C1 = new Contact("Abul", "123", 20, "01776662986", 'M');
-    C1.showPersonInfo();
-    C1.detectMobileOperator();
-	}
 }

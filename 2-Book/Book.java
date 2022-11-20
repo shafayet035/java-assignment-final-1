@@ -1,9 +1,9 @@
 public class Book {
-	String bookName;
-	String bookAuthor;
-	String bookId;
-	String bookType;
-	int bookCopy;
+	private String bookName;
+	private String bookAuthor;
+	private String bookId;
+	private String bookType;
+	private int bookCopy;
 
 	static int bookCounter;
 

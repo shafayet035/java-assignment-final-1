@@ -1,7 +1,7 @@
 public class Account {
-	private	String accName; 
-	private String acid; 
-	private int balance;
+	 private String accName;
+	 private String acid;
+	 private int balance;
 
 	Account() {}
 
@@ -37,5 +37,6 @@ public class Account {
 		King.withdraw(30);
 
 		Leo.transfer(25, King);
+
 	}
 }
