@@ -29,8 +29,8 @@ public class AddressBook {
 
   public static void main(String args[]) {
     AddressBook A = new AddressBook("My Address Book", "Some info given");
-    Contact C1 = new Contact("Abul", "123", 20, "01776662986", 'M');
-		Contact C2 = new Contact("Abul Karim", "1213", 201, "01776662926", 'M');
+    Contact C1 = new Contact("Mr. Wangru", "1", 50, "01894561237", 'M');
+		Contact C2 = new Contact("Virus", "2", 40, "01789456123", 'M');
     A.addContact(C1);
     A.addContact(C2);
     A.showAllContactInfo();

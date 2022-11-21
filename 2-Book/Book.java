@@ -15,7 +15,6 @@ public class Book {
 		this.bookId = bookId;
 		this.bookType = bookType;
 		this.bookCopy = bookCopy;
-
 		this.bookCounter++;
 	}
 
@@ -28,7 +27,7 @@ public class Book {
 	}
 
 	public void addBookCopy(int x) {
-		this.bookCopy = this.bookCopy + x;
+		this.bookCopy += x;
 	}
 
 	static void showTotalBookInfo() {
@@ -36,16 +35,9 @@ public class Book {
 	}
 
 	public static void main(String args[]) {
-		Book B1 = new Book("Physics", "Mr.X", "123", "Kufa", 1);
-		Book B2 = new Book("Math", "Mr.Y", "1234", "Kufa", 1);
-		Book B3 = new Book("Math", "Mr.Y", "1234", "Kufa", 1);
-
-		B1.addBookCopy(10);
-		B2.addBookCopy(5);
-
+		Book B1 = new Book("The lord of the rings", "J. R. R. Tolkien", "1", "Fantasy", 50);
+		B1.addBookCopy(50);
 		B1.showTotalBookInfo();
-
 		B1.showInfo();
-		B2.showInfo();
 	}
 }

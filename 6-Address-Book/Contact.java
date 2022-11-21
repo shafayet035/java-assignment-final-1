@@ -6,8 +6,7 @@ public class Contact {
   private char gender;
 
   Contact(){};
-  Contact(String personName, String personId, int age, String mobileNumber,
-      char gender) {
+  Contact(String personName, String personId, int age, String mobileNumber, char gender) {
     this.personName = personName;
     this.personId = personId;
     this.age = age;
@@ -17,8 +16,7 @@ public class Contact {
 
   public void showPersonInfo() {
     System.out.println("Name: " + this.personName);
-    System.out.println("Id: " + this
-    .personId);
+    System.out.println("Id: " + this.personId);
     System.out.println("Age: " + this.age);
     System.out.println("Mobile Number: " + this.mobileNumber);
     System.out.println("Gender: " + this.gender);

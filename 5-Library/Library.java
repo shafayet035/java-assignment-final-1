@@ -31,17 +31,17 @@ public class Library {
   }
 
   public static void main(String args[]) {
-    Library L = new Library("World Library", "Uganda");
-    Book B1 = new Book("Math", "Mr.Y", "1234", "Kufa", 1);
-    Book B2 = new Book("Physics", "Mr.X", "1231", "Kufa", 1);
+    Library Library = new Library("The Library", "Universe-5");
+    Book B1 = new Book("The lord of the rings", "J. R. R. Tolkien", "1", "Fantasy", 50);
+    Book B2 = new Book("One Punch Man", "Yusuke Murata", "2", "Shonen manga", 80);
 
-    L.addNewBook(B1);
-    L.addNewBook(B2);
+    Library.addNewBook(B1);
+    Library.addNewBook(B2);
 
-    L.addNewBookCopy(B1, 10);
-    L.addNewBookCopy(B2, 15);
+    Library.addNewBookCopy(B1, 10);
+    Library.addNewBookCopy(B2, 15);
 
-    L.showLibInfo();
+    Library.showLibInfo();
   }
 
 

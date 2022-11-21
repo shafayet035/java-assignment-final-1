@@ -32,6 +32,7 @@ public class Account {
 	public void transfer(int amount, Account receiver) {
 		receiver.deposit(amount);
 		this.withdraw(amount);
+		this.addTransaction(this, receiver, amount);
 	}
 
 	public void addTransaction(Account sender, Account receiver, int amount) {
@@ -48,20 +49,14 @@ public class Account {
     }
 	}
 
-
-
 	public static void main(String args[]) {
-		Account Leo = new Account("Leon", "420", 100);
-		Account King = new Account("Kingsman", "001", 50);
-		Leo.deposit(10);
-		Leo.withdraw(50);
-		King.deposit(30);
-		King.withdraw(30);
-		Leo.transfer(25, King);
-		Leo.addTransaction(Leo, King, 5000);
-		Leo.addTransaction(Leo, King, 2000);
-		Leo.addTransaction(Leo, King, 3000);
-		Leo.addTransaction(Leo, King, 4000);
-		Leo.showAllTranscation();
+		Account Bean = new Account("Bean", "1", 500);
+		Account Charlie = new Account("Kingsman", "2", 200);
+		Bean.deposit(10);
+		Bean.withdraw(50);
+		Charlie.deposit(30);
+		Charlie.withdraw(30);
+		Bean.transfer(25, Charlie);
+		Bean.showAllTranscation();
 	}
 }

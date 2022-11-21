@@ -6,8 +6,7 @@ public class Contact {
   private char gender;
 
   Contact(){};
-  Contact(String personName, String personId, int age, String mobileNumber,
-      char gender) {
+  Contact(String personName, String personId, int age, String mobileNumber, char gender) {
     this.personName = personName;
     this.personId = personId;
     this.age = age;
@@ -17,8 +16,7 @@ public class Contact {
 
   public void showPersonInfo() {
     System.out.println("Name: " + this.personName);
-    System.out.println("Id: " + this
-    .personId);
+    System.out.println("Id: " + this.personId);
     System.out.println("Age: " + this.age);
     System.out.println("Mobile Number: " + this.mobileNumber);
     System.out.println("Gender: " + this.gender);
@@ -38,7 +36,7 @@ public class Contact {
   }
 
   public static void main(String args[]) {
-		Contact C1 = new Contact("Abul", "123", 20, "01776662986", 'M');
+		Contact C1 = new Contact("Mr. Wangru", "1", 50, "01945612378", 'M');
     C1.showPersonInfo();
     C1.detectMobileOperator();
 	}

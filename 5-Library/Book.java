@@ -27,7 +27,7 @@ public class Book {
 	}
 
 	public void addBookCopy(int x) {
-		this.bookCopy = this.bookCopy + x;
+		this.bookCopy += x;
 	}
 
 	static void showTotalBookInfo() {
